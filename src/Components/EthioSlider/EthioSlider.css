@@ -1,0 +1,68 @@
+.Ethio-slider{
+    width: 100%;
+    margin-top: 100px;
+}
+.slider-container{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+.Slider-head{
+   display: flex;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+.Slider-head h2{
+    text-align: center;
+}
+.Sliders{
+max-width: 1040px;
+margin: auto;
+  height: 100%;
+}
+.Sliders img{
+    object-fit: cover;
+ width: 100%;
+  height: 200px;
+
+}
+.Swiper-card{
+   margin: .5rem;
+    border: 1px solid #ccc;
+    box-shadow: rgba(99,99,99,.6) 0px 5px 8px 0px;
+    position: relative;
+}
+.swiper-overlay{
+    position: absolute;
+    left: 0;
+     background-color: rgba(0,0,0,.2);
+     width: 100%;
+     height: 100%;
+     top: 0;
+}
+.swiper-overlay p{
+color: #fff;
+position: absolute;
+bottom: .1rem;
+font-weight: 600;
+background-color: #4f9c55;
+padding:0 .5rem;
+border-radius: 5px;
+left: .1rem;
+}
+@media screen and (max-width:940px) {
+    .Slider-head{
+        flex-direction: column;
+    }
+    .Sliders{
+        width: 100%;
+    }
+    .Sliders img{
+        width: 100%;
+        height: 150px;
+      }
+   
+}

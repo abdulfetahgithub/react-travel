@@ -1,0 +1,111 @@
+.Hero {
+width: 100%;
+height: 100vh;
+position: relative;
+}
+.hero-overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+ #video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    justify-content: center;
+    top: 0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.counter-ethio{
+    display: flex;
+    flex-direction: column;
+       position: absolute;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      bottom: 10rem;
+      left: 5rem;
+      font-weight: 600;
+      color:#fff;
+}
+.contents h2{
+    color: #fff;
+    font-size: 4rem;
+}
+.contents p{
+    color: #fff;
+    font-size: 2rem;
+    font-style: italic;
+    padding: 1rem 0;
+}
+.contents form{
+    background-color: #f8f8f8;
+    padding: .4rem 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+ .contents  input{
+    padding: .4rem 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Poppins',sans-serif;
+    width: 600px;
+    border: transparent;
+    background: transparent;
+    outline: none;
+}
+.contents button{
+    padding: .3rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #909dff;
+    background:linear-gradient(45deg,#5651ef 0%,#709dff 100%);
+}
+@media screen and (max-width:940px) {
+    .contents h2{
+        font-size: 2rem;
+    }
+    .contents p{
+        color: #fff;
+        font-size: 1rem;
+    } 
+    .contents input{
+        max-width: 250px;
+    }
+    .contents button{
+     padding: .4rem 1.3rem;
+    }
+    .counter-ethio{
+          font-size: 1.6rem;
+          bottom: 2rem;
+          left: 5rem;     
+    }
+}
+@media screen and (max-width:372px) {
+
+    .contents input{
+        max-width: 190px;
+        font-size: 1rem;
+    }
+    .contents button{
+        padding: .4rem 1rem;
+       }
+}

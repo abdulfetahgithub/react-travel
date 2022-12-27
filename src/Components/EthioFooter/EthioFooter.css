@@ -1,0 +1,150 @@
+.Ethio-footer{
+    width: 100%;
+  height: fit-content;
+    background-color: #1c2237;
+}
+.ethio-footer-container{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+.footer-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.footer-top .arrows{
+ position: absolute;
+  font-size: 3rem;
+  top: -1rem;
+ right: 3rem;
+ cursor: pointer;
+}
+.footer-top p{
+    font-size: 1.2rem;
+    margin: .5rem;
+}
+.footer-top form{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.footer-top form input{
+    padding: 1rem 1.6rem;
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: 10px;
+    width:400px;
+    margin: 1rem;
+}
+.footer-top form button{
+    padding: 1.2rem 1.9rem;
+    border-radius: 10px;
+    width: 150px;
+    background-color: #1c2237;
+    color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.footer-top form button:hover{
+    background-color: #f6f6f6;
+    color: #1c2237;
+}
+.footer-grid-bottom{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.footer-grid-bottom>div{
+    width: 100%;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.footer-menus{
+display: flex;
+flex-direction: column;
+color: #fff;
+}
+.footer-menus li{
+    padding: .6rem 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.footer-last{
+    display: flex;
+    width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin: 2rem 0;
+}
+.footer-last p{
+    font-size: 1.2rem;
+}
+.footer-last small{
+    font-size: 1.2rem;
+}
+.Ethio-social-icon{
+   display: flex;
+   justify-content: space-between;
+   width: 150px;
+}
+.Ethio-social-icon .icon{
+    font-size: 1.6rem;
+    align-items: center;
+}
+.Ethio-social-icon .icon:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: .3s ease;
+}
+@media screen and (max-width:940px) {
+    .footer-grid-bottom{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-last{
+        flex-direction: column;
+    }
+    .footer-last h2{
+        margin-bottom: 1rem;
+    }
+    .footer-last p{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .footer-top h2{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .footer-top p{
+        text-align: center;
+    }
+    .footer-top form input{
+        padding: 1rem 1.6rem;
+        font-size: 1rem;
+          width: 300px;
+
+    }
+    .footer-top form button{
+        padding: 1rem 1.6rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:625px) {
+    .footer-top .arrows{
+  right: 0;
+  top: -2rem;
+    }
+
+}

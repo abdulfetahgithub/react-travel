@@ -1,0 +1,157 @@
+.Navbar{
+    width: 100%;
+    height: 100px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    background-color: #2c2337;
+}
+.Container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 2rem;
+    height: 100%;
+}
+.Logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    font-style: italic;
+    border-left: 7px solid #0fb8e0;;
+    border-top: 7px solid #0fb8e0;;
+    cursor: pointer;
+    color: #f6f6f6;
+}
+.Logo :nth-child(2){
+    margin-left: 7rem;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.Nav-menu{
+    display: flex;
+}
+.Nav-menu a{
+    padding: 0 1rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #fff;
+}
+.Nav-menu a:hover{
+ cursor: pointer;
+ padding-bottom: 12px;
+ border-bottom: 2px solid #02ffff;
+}
+.Nav-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Nav-icon .icons{
+    font-size: 1.2rem;
+    cursor:pointer;
+    color: #fff;
+}
+.Nav-icon :nth-child(1){
+      margin-right: .8rem;
+}
+.fabar-fatimes{
+    display: none;
+}
+.Mobil-top,.Mobil-socila-icons{
+    display: none;
+}
+.mobil-bg{
+    background-color: #f6f6f6;
+  }
+@media screen and (max-width:1330px) {
+   
+      .Nav-menu{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        top: -140vh;
+        left: 0;
+        position: absolute;
+        justify-content: center;
+        background-color:#f6f6f6;
+        transition: .3s ease-in-out;
+      } 
+      .active{
+        top: 100px;
+        transition: .3s ease-in-out;
+      }
+      .fabar-fatimes{
+        display: block;
+        position: absolute;
+        right: 0rem;
+        top: 0;
+        font-size:2rem;
+        transform: translate(-60%,50%);
+        cursor: pointer;
+      }
+      .Mobil-top,.Mobil-socila-icons{
+        display: flex;
+    }
+    .Mobil-top{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+     .Mobil-top button{
+        padding: .5rem 1.5rem;
+        font-size: 1.2rem;
+        font-family: 'Poppins',sans-serif;
+        width: 90%;
+        color: #f6f6f6;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 12px;
+         background:linear-gradient(45deg,#5651e5 0% , #907dff 100%);
+    }
+    .Mobil-top button:hover{
+        background:linear-gradient(45deg,#5651e5 0% , #0000ff 100%);
+        transition: background 2s;
+    }
+    .Mobil-btn{
+        margin: 1rem 0;
+    }
+    .Mobil-socila-icons{
+       width: 100%;
+        justify-content: space-between;
+         align-items: center;
+         padding: 1rem 2rem;
+    }
+    .Mobil-socila-icons .icon{
+        font-size: 1.5rem;
+        color: #5651e5;
+
+    }
+    .Mobil-socila-icons .icon:hover{
+           transform: scale(1.2);
+           cursor: pointer;
+    }
+     .Nav-menu li{
+        padding: 1.2rem 1rem;
+        border-bottom: 1px solid #ccc;
+     }
+     .Nav-menu a{
+        color: #333;
+        font-size: 1.5rem;
+    
+     }
+     .Nav-menu a:hover{
+        border-bottom: none;
+    
+     }
+    .Nav-icon{
+        display: none;
+      }
+}

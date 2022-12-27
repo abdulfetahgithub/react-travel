@@ -1,0 +1,228 @@
+.book{
+    width: 100%;
+    margin-top: 110px;
+}
+
+.book-content-grid{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+.book-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.book-left h2{
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+.book-left p{
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+.book-left-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.book-box-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-box-1 img{
+    width: 15rem;
+}
+.book-box-1-1, .book-box-2 h3{
+font-size: 2rem;
+font-weight: 600;
+}
+.book-box-1 .book-box-1-1 p{
+font-size: 1.2rem;
+font-weight: 200;
+}
+.book-box-2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.book-box-2 p{
+    font-size: 1.2rem;
+}
+.book-left-bottom button{
+  padding: 1rem 1.6rem;
+  margin-top: 1rem;
+  width: 200px;
+  height: 5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  background-color: #0fb8e0;
+  border: 1px solid #0fb8e0;
+  color: #f6f6f6;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 35px;
+}
+.book-left-bottom button:hover{
+    transform: scale(1.03);
+    transition: .3s ease;
+    cursor:pointer;
+}
+.book-right{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+.book-promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.save{
+  font-size: 3rem;
+  color: #0fb8e0;
+}
+.timer{
+  font-weight: 600;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  font-style: oblique;
+}
+.offers{
+ font-size: 1.2rem;
+ background-color: #1c2337;
+ width: 100%;
+ padding: .5rem 0;
+ color: #fff;
+ text-align: center;
+}
+.book-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.book-form label{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.input-wrapper select{
+    font-size: 1.2rem;
+    outline: none;
+}
+.input-wrapper option{
+    background-color: #1c2337;
+    color: #f6f6f6;
+}
+.date-wrappre{
+    display: flex;
+    margin: 1rem 0;
+}
+.check-in{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 .7rem
+}
+.input-date{
+  font-size: 1.2rem;
+}
+.check-ava{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.check-ava button{
+    padding: 1rem 1.6rem;
+    margin-top: 1rem;
+    width: 500px;
+    height: 6rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: #0fb8e0;
+    border: 1px solid #0fb8e0;
+    color: #f6f6f6;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 35px; 
+}
+.check-ava button:hover{
+    transform: scale(1.03);
+    transition: .3s ease;
+    cursor:pointer;
+}
+
+@media screen and (max-width:940px) {
+    .book-content-grid{
+        grid-template-columns: 1fr;
+    }
+    .book-left h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+.book-left-bottom{
+    grid-template-columns: 1fr;
+}
+
+
+.book-box-1 img{
+    width: 9rem;
+}
+.book-box-1-1, .book-box-2 h3{
+font-size: 1.2rem;
+}
+.book-box-1 .book-box-1-1 p{
+font-size: 1rem;
+}
+.book-left-bottom button{
+    width: 200px;
+    height: 3rem;
+    font-size: 1rem;
+}
+.save{
+    font-size: 1.2rem;
+  }
+  .timer{
+    font-size: 1rem;
+  }
+  .offers{
+   font-size: 1rem;
+  }
+  .check-ava button{
+  width: 300px;
+  height: 3.5rem;
+  font-size: 1rem;
+}
+.date-wrappre{
+    flex-direction: column;
+}
+.book-box-1{
+    flex-direction: column;
+}
+
+}
